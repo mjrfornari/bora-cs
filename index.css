@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Saira&display=swap');
+
+*, html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Saira', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Saira', sans-serif;
+}
+
+
+html {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  font-size: 0.8rem;
+}
+
+body div {
+  background-color: black;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.bora {
+  background-image: url('cs.jpg');
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+
+body div h1{
+  display:none;
+}
+
+.showText{
+  display: block;
+  align-self: center;
+  color: white;
+}
+
+.hide {
+  display:none
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#49573B" />
+    <meta
+      name="description"
+      content="BORA CS GURIZADA"
+    />
+    <title>BORA CS GURIZADA</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="background">
+        <h1 id="text">0</h1>
+        <button id="button">Clique aqui...</button>
+        <audio id="myAudio" src="sound.mp3" muted></audio>
+        <script type="text/javascript">
+            var button = document.getElementById("button") 
+            button.addEventListener ("click", function() {
+                button.className = 'hide'
+                document.getElementById("text").className = 'showText'
+                for (let i = 5; i > 0; i--) {
+                    setTimeout(function timer() {
+                        document.getElementById("text").innerHTML = i
+                        console.log(i)
+                        if (i==5) {
+                            document.getElementById("myAudio").muted = false;
+                            document.getElementById("myAudio").play();
+                            document.getElementById("text").innerHTML = 'BORA CS GURIZADA???????'
+                            document.getElementById("background").className = "bora"
+                        }
+                    }, i * 1000);
+                }
+            });
+        </script>
+    </div>
+  </body>
+</html>
